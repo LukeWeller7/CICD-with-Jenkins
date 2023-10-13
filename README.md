@@ -1,5 +1,11 @@
 # Guild to creating Jenkins and implimenting CICD Pipeline
 
+## Blockers
+SSH won't make connection with GitHub - Fixed  
+```
+sudo su - jenkins 
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+```
 ## Building Jenkins with enviroment variables
 1. Set-up an EC2 instance on VPC (Go to for VPC guide)  
     i. For NSG select ports 22, 8080, and 80  
